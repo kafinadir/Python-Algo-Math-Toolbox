@@ -1,0 +1,30 @@
+from sympy import expand, factor
+print("|_____________________________ Factoriser ___________________________|")
+print("|________________________________ Et ________________________________|")
+print("|_____________________________ Developper ___________________________|")
+print("|______________________________ By kafi _____________________________|")
+re = 1
+
+print()
+print("#####################################################################")
+print("############################### NOTE ☒ ##############################")
+print("#####################################################################")
+print("# <<<                                                               #")
+print("# S'il vous évitez des faires ces fautes en écrivons l'expression:  #")
+print("# 5x + 3y + (a+5)² - 7(9a / 6x)                  |>   Faux ☒        #")
+print("# 5*x + 3*y + (a+5)**2 - 7*((9*a)/(6*x))         |>   Vrai ☑        #")
+print("# >>>                                                               #")
+print("#####################################################################")
+print()
+
+while re == 1:
+    expretion = input(" entrer ici votre expression : ")
+    print()
+    print("La factorisation de l'expression entrée est :")
+    print(factor(expretion))
+    print()
+    print("Le developpement de l'expression entrée est :")
+    print(expand(expretion))
+    print()
+    print("|______________________________ By kafi _____________________________|")
+    re = int(input("Tapez '1' pour repeter le programme ou '0' pour quittez : "))
